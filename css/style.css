@@ -236,9 +236,6 @@ ul {
     align-items: center;
     justify-content: center
 }
-.specialties-icon {
-    
-}
 
 .specialties-item {
     margin-right: 30px;
@@ -287,7 +284,9 @@ ul {
 .work-card {
     display: block;
 }
+
 /*  Наша команда */
+
 .team {
     background-color: var(--background-team-color);
 }
@@ -321,7 +320,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 .team-subject {
-    font-weight: 500;m-socials-icon
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -358,20 +357,20 @@ ul {
     margin-bottom: 0;
     color: rgba(175, 177, 184, 1);
 }
-..team-socials-icon {
+.socials-icon {
     fill: currentColor;
 }
 .socials-link:hover, .socials-link:focus {
     background: var(--header-color-hover);
-    fill: var(--logo-hover);
+    color: var(--logo-hover);
 }
 
-
+/*  Постійні клієнти */
 .clients-title {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(36 / 42);
+    line-height: calc(42 / 36);
     text-align: center;
     color: var(--main-title-color);
     margin-bottom: 50px;
@@ -379,29 +378,45 @@ ul {
 
 .clients-list {
     display: flex;
+    gap: 30px;
     
 }
-.clients-iteam {
-    background-color: #F5F5F5;
-    gap: 30px;
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: rgba(175, 177, 184, 1);
 }
-/.clients-link {
+.clients-icon {
     border: 1px solid #AFB1B8;
     border-radius: 4px; 
+    fill: currentColor;
 }
 
-.clients-link:hover, .clients-link:focus {
-
+.clients-icon:hover, .clients-icon:focus {
+    fill: var(--header-color-hover); 
+    border-color: var(--header-color-hover);
 }
-
 /*---------------MAIN----------------*/
 
 /*-------------FOOTER---------------*/
 .footer-contact {
     background: var(--background-footer-color);
     font-style: normal;
+    
+}
+.footer-container {
+    display: flex;
+    gap: 70px;
+}
+.footer-address {
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 231px;
+    
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -451,6 +466,36 @@ ul {
     margin-bottom: 0;
 }
 
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    height: 80px;
+    padding-top: 72px;
+    padding-bottom: 100px;
+    margin-left: 0;
+    margin-right: auto;
+    
+}
+.sign-on {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--footer-inform-color);
+    padding-left: 0;
+}
+.socials-link .footer {
+    background: rgba(255, 255, 255, 0.1);
+}
+.socials-item .footer {
+    color: rgba(255, 255, 255, 1);
+}
+.socials-icon .footer {
+    fill: currentColor;
+}
+
 /*-------------FOOTER---------------*/
 
 
@@ -462,13 +507,13 @@ ul {
     justify-content: center;
 }
 .filter-total-btn, .filter-btn {
-    background: var(--btn-color);
+    background: var(--background-team-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
     text-align: center;
-    color: var(--banner-text-color);
+    color: var(--main-title-color);
     cursor: pointer;
     border: none;
     min-width: 73px;
@@ -481,15 +526,21 @@ ul {
 }*/
 
 .filter-btn {
-    background: var(--background-team-color);
-    color: var(--main-title-color);
     padding: 6px 22px 6px 22px;
 }
-
+.filter-total-btn:hover,
+.filter-total-btn:focus {
+    color: var(--banner-text-color);
+    background-color: var(--btn-color-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--banner-text-color);
     background-color: var(--btn-color-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .filter-item {
@@ -544,7 +595,12 @@ ul {
     line-height: calc(30 / 16);
     margin-top: 0px;
     margin-bottom: 0px;
-  
 }
 
+.portfolio-item:hover, {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-item:focus {}
 /*------ПРОЕКТИ-------------*/
