@@ -368,6 +368,7 @@ ul {
 }
 
 /*  Постійні клієнти */
+
 .clients-title {
     font-style: normal;
     font-weight: 700;
@@ -381,27 +382,29 @@ ul {
 .clients-list {
     display: flex;
     gap: 30px;
-    
 }
-
 .clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
     height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
     color: rgba(175, 177, 184, 1);
 }
 .clients-icon {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px; 
     fill: currentColor;
+}
+.clients-link:hover, .clients-link:focus {
+    border: 1px solid var(--header-color-hover);
+    border-radius: 4px;
+    color: var(--header-color-hover);
 }
 
 .clients-icon:hover, .clients-icon:focus {
     fill: var(--header-color-hover); 
-    border: 1px solid var(--header-color-hover);
-    border-radius: 4px;
 }
 /*---------------MAIN----------------*/
 
