@@ -344,15 +344,16 @@ ul {
     margin-right: 32px;
     /*color: rgba(175, 177, 184, 1);*/
 }
-/*.socials-item {
-    color: rgba(175, 177, 184, 1);
-}*/
+.socials-item {
+    width: 44px;
+    height: 44px;
+}
 .socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 0;
@@ -383,12 +384,16 @@ ul {
     display: flex;
     gap: 30px;
 }
+.clients-card {
+    width: 170px;
+    height: 92px;
+}
 .clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
@@ -412,17 +417,15 @@ ul {
 .footer-contact {
     background: var(--background-footer-color);
     font-style: normal;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-container {
     display: flex;
     gap: 70px;
 }
 .footer-address {
-    padding-top: 60px;
-    padding-bottom: 60px;
     width: 231px;
-    
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -475,12 +478,10 @@ ul {
 .footer-socials {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
     width: 206px;
-    padding-top: 75px;
-    padding-bottom: 105px;
     margin-left: 0;
-    
-    
+    margin-top: 15px;
 }
 .sign-on {
     font-weight: 700;
@@ -493,12 +494,19 @@ ul {
     margin-bottom: 20px;
     height: 16px;
 }
-.socials-link .footer {
-    color: var(--footer-inform-color);
+.team-socials.footer {
+    margin-left: 0;
+    margin-right: 0;
 }
-.socials-item .footer {
-    color: rgba(255, 255, 255, 1);
+.socials-item.footer {
+    width: 44px;
     height: 44px;
+    color: rgba(255, 255, 255, 1);
+    }
+.socials-link.footer {
+    width: 100%;
+    height: 100%;   
+    color: var(--footer-inform-color);
 }
 .socials-icon .footer {
     fill: currentColor;
@@ -563,10 +571,12 @@ ul {
 .portfolio-list {
    /* border: 1px solid #EEEEEE;*/
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+     
 }
 .portfolio-link {
     display: block;
+    text-decoration: none;
 }
 .portfolio-card {
     display: block;
@@ -578,6 +588,7 @@ ul {
     padding: 20px 24px; 
     border: 1px solid #EEEEEE; 
     border-top: none;
+    
 }
 .portfolio-item {
     width: 370px;
@@ -607,6 +618,7 @@ ul {
     line-height: calc(30 / 16);
     margin-top: 0px;
     margin-bottom: 0px;
+    color: var(--main-desc-color);
 }
 
 .portfolio-link:hover, .portfolio-link:focus{
